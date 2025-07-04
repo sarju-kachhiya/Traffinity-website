@@ -131,13 +131,6 @@
                     </div>
                   </div>
 
-                  <div class="contact-item">
-                    <i class="bi bi-telephone"></i>
-                    <div>
-                      <h4>Phone:</h4>
-                      <p>+1 (555) 123-4567</p>
-                    </div>
-                  </div>
 
                   <div class="contact-item">
                     <i class="bi bi-geo-alt"></i>
@@ -150,7 +143,6 @@
                 </div>
 
                 <div class="social-links">
-                  <a href="#"><i class="bi bi-twitter"></i></a>
                   <a href="#"><i class="bi bi-facebook"></i></a>
                   <a href="#"><i class="bi bi-instagram"></i></a>
                   <a href="#"><i class="bi bi-linkedin"></i></a>
@@ -161,36 +153,122 @@
 
           <div class="col-lg-7">
             <div class="contact-form-wrapper">
-              <form action="forms/contact.php" method="post" class="php-email-form">
-                <div class="row">
-                  <div class="col-md-6 form-group">
-                    <label for="name">Your Name</label>
-                    <input type="text" name="name" class="form-control" id="name" placeholder="John Doe" required="">
-                  </div>
-                  <div class="col-md-6 form-group mt-3 mt-md-0">
-                    <label for="email">Your Email</label>
-                    <input type="email" class="form-control" name="email" id="email" placeholder="john@example.com" required="">
-                  </div>
-                </div>
-                <div class="form-group mt-3">
-                  <label for="subject">Subject</label>
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="I loved your book!" required="">
-                </div>
-                <div class="form-group mt-3">
-                  <label for="message">Message</label>
-                  <textarea class="form-control" name="message" rows="7" placeholder="Your message here..." required=""></textarea>
-                </div>
+              
 
-                <div class="my-3">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-                </div>
+                <form action="contact.php" method="post" class="php-email-form">
+    <div class="row">
+      <div class="col-md-6 form-group">
+        
+        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
+      </div>
+      <div class="col-md-6 form-group mt-3 mt-md-0">
+        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
+      </div>
+    </div>
 
-                <div class="text-center">
-                  <button type="submit">Send Message</button>
-                </div>
-              </form>
+    <div class="row mt-3">
+      <div class="col-md-3 form-group">
+        <select name="countryCode" id="countryCode" class="form-control">
+          <option value="" disabled selected>Select Country</option>
+          <option value="+1">+1 (USA, Canada, Caribbean etc.)</option>
+    <option value="+20">+20 (Egypt)</option>
+    <option value="+30">+30 (Greece)</option>
+    <option value="+31">+31 (Netherlands)</option>
+    <option value="+91">+91 (India)</option>
+    <option value="+32">+32 (Belgium)</option>
+    <option value="+33">+33 (France)</option>
+    <option value="+34">+34 (Spain)</option>
+    <option value="+39">+39 (Italy)</option>
+    <option value="+44">+44 (UK)</option>
+    <option value="+49">+49 (Germany)</option>
+    <option value="+52">+52 (Mexico)</option>
+    <option value="+61">+61 (Australia)</option>
+    <option value="+62">+62 (Indonesia)</option>
+    <option value="+63">+63 (Philippines)</option>
+    <option value="+64">+64 (New Zealand)</option>
+    <option value="+65">+65 (Singapore)</option>
+    <option value="+66">+66 (Thailand)</option>
+    <option value="+7">+7 (Russia/Kazakhstan)</option>
+    <option value="+81">+81 (Japan)</option>
+    <option value="+82">+82 (South Korea)</option>
+    <option value="+84">+84 (Vietnam)</option>
+    <option value="+86">+86 (China)</option>
+    <option value="+92">+92 (Pakistan)</option>
+    <option value="+93">+93 (Afghanistan)</option>
+    <option value="+94">+94 (Sri Lanka)</option>
+    <option value="+95">+95 (Myanmar)</option>
+    <option value="+97">+971 (UAE)</option>
+    <option value="+98">+98 (Iran)</option>
+    <option value="+212">+212 (Morocco)</option>
+    <option value="+213">+213 (Algeria)</option>
+    <option value="+216">+216 (Tunisia)</option>
+    <option value="+218">+218 (Libya)</option>
+    <option value="+220">+220 (Gambia)</option>
+    <option value="+221">+221 (Senegal)</option>
+    <option value="+222">+222 (Mauritania)</option>
+    <option value="+223">+223 (Mali)</option>
+    <option value="+224">+224 (Guinea)</option>
+    <option value="+225">+225 (Côte d’Ivoire)</option>
+    <option value="+226">+226 (Burkina Faso)</option>
+    <option value="+27">+27 (South Africa)</option>
+    <option value="+30">+30 (Greece)</option>
+    <option value="+351">+351 (Portugal)</option>
+    <option value="+353">+353 (Ireland)</option>
+    <option value="+354">+354 (Iceland)</option>
+    <option value="+355">+355 (Albania)</option>
+    <option value="+356">+356 (Malta)</option>
+    <option value="+357">+357 (Cyprus)</option>
+    <option value="+358">+358 (Finland)</option>
+    <option value="+359">+359 (Bulgaria)</option>
+    <option value="+370">+370 (Lithuania)</option>
+    <option value="+371">+371 (Latvia)</option>
+    <option value="+372">+372 (Estonia)</option>
+    <option value="+373">+373 (Moldova)</option>
+    <option value="+374">+374 (Armenia)</option>
+    <option value="+375">+375 (Belarus)</option>
+    <option value="+376">+376 (Andorra)</option>
+    <option value="+377">+377 (Monaco)</option>
+    <option value="+378">+378 (San Marino)</option>
+    <option value="+380">+380 (Ukraine)</option>
+    <option value="+381">+381 (Serbia)</option>
+    <option value="+382">+382 (Montenegro)</option>
+    <option value="+385">+385 (Croatia)</option>
+    <option value="+386">+386 (Slovenia)</option>
+    <option value="+387">+387 (Bosnia & Herzegovina)</option>
+    <option value="+389">+389 (North Macedonia)</option>
+    <option value="+420">+420 (Czech Republic)</option>
+    <option value="+421">+421 (Slovakia)</option>
+    <option value="+423">+423 (Liechtenstein)</option>
+    <option value="+44">+44 (UK)</option>
+    <option value="+46">+46 (Sweden)</option>
+    <option value="+47">+47 (Norway)</option>
+    <option value="+48">+48 (Poland)</option>
+    <option value="+49">+49 (Germany)</option>
+        </select>
+      </div>
+      <div class="col-md-9 form-group mt-3 mt-md-0">
+        <input type="tel" name="phone" class="form-control" id="phone" placeholder="Your Phone Number" maxlength="10" pattern="[0-9]{10}" title="Please enter a 10-digit phone number" required="">
+      </div>
+    </div>
+
+    <div class="form-group mt-3">
+      <input type="text" class="form-control" name="subject" id="subject" placeholder="Your Subject" required="">
+    </div>
+    <div class="form-group mt-3">
+      <textarea class="form-control" name="message" rows="7" placeholder="Your message here..." required=""></textarea>
+    </div>
+
+    <div class="my-3">
+      <div class="loading">Loading</div>
+      <div class="error-message"></div>
+      <div class="sent-message">Your message has been sent. Thank you!</div>
+    </div>
+
+    <div class="text-center">
+      <button type="submit">Send Message</button>
+    </div>
+  </form>
+
             </div>
           </div>
         </div>
@@ -212,11 +290,9 @@
             <p class="mt-4">At Adsala, we specialize in delivering powerful digital marketing strategies that drive awareness, generate leads, and accelerate growth.</p>
             <h4>Follow Us</h4>
           <div class="social-links d-flex">
-            <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
             <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
             <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-          </div>
+<a href="https://www.linkedin.com/company/adsala/" class="linkedin"><i class="bi bi-linkedin"></i></a>          </div>
 
         </div>
 
@@ -226,12 +302,12 @@
             <h4>Company</h4>
             <p>
                 <ul class="footer-links" style="list-style: none; margin-left: -25px;">
-                  <li><a href="index.html" style="font-size: larger;"><b> Home</b></a></li>
-                  <li><a href="marketer.html" style="font-size: larger;"><b> Marketer</b></a></li>
-                  <li><a href="about.html" style="font-size: larger;"><b> About Us</b></a></li>
-                  <li><a href="contact.html" style="font-size: larger;"><b> Contact</b></a></li>
-                  <li><a href="terms.html" style="font-size: larger;"><b> Terms & Conditions</b></a></li>
-                  <li><a href="privacy.html" style="font-size: larger;"><b> Privacy Policy</b></a></li>
+                  <li class="mt-2"><a href="index.html" style="font-size: larger; color: black;"><b> Home</b></a></li>
+                  <li class="mt-2"><a href="marketer.html" style="font-size: larger; color: black;"><b> Marketer</b></a></li>
+                  <li class="mt-2"><a href="about.html" style="font-size: larger; color: black;"><b> About Us</b></a></li>
+                  <li class="mt-2"><a href="contact.html" style="font-size: larger; color: black;"><b> Contact</b></a></li>
+                  <li class="mt-2"><a href="terms.html" style="font-size: larger; color: black;"><b> Terms & Conditions</b></a></li>
+                  <li class="mt-2"><a href="privacy.html" style="font-size: larger; color: black;"><b> Privacy Policy</b></a></li>
             </ul>
             </p>
           </div>
@@ -243,13 +319,13 @@
             <h4>Services</h4>
             <p>
                 <ul class="footer-links" style="list-style: none; margin-left: -25px; font-size: larger;">
-                    <li><a href="lead-generation.html"><b>Lead Generation</b></a></li>
-                    <li><a href="email-marketing.html"><b>Email Marketing</b></a></li>
-                    <li><a href="social-media-advertising.html"><b>Social Media Advertising</b></a></li>
-                    <li><a href="ppc-advertising.html"><b>PPC Advertising</b></a></li>
-                    <li><a href="display-advertising.html"><b>Display Advertising</b></a></li>
-                    <li><a href="re-targeting-ads.html"><b>Re-Targeting Ads</b></a></li>
-                    <li><a href="search-engine-optimization.html"><b>Search Engine Optimization</b></a></li>
+                    <li class="text-dark mt-2"><a href="lead-generation.html" style="color: black;"><b>Lead Generation</b></a></li>
+                    <li class="text-dark mt-2"><a href="email-marketing.html" style="color: black;"><b>Email Marketing</b></a></li>
+                    <li class="text-dark mt-2"><a href="social-media-advertising.html" style="color: black;"><b>Social Media Advertising</b></a></li>
+                    <li class="text-dark mt-2"><a href="ppc-advertising.html" style="color: black;"><b>PPC Advertising</b></a></li>
+                    <li class="text-dark mt-2"><a href="display-advertising.html" style="color: black;"><b>Display Advertising</b></a></li>
+                    <li class="text-dark mt-2"><a href="re-targeting-ads.html" style="color: black;"><b>Re-Targeting Ads</b></a></li>
+                    <li class="text-dark mt-2"><a href="search-engine-optimization.html" style="color: black;"><b>Search Engine Optimization</b></a></li>
             </ul>
             </p>
           </div>
@@ -270,17 +346,18 @@
             <div>
             <h4>Contact</h4>
             <p>
-              <strong>Phone:</strong> <span>+1 5589 55488 55</span><br>
+              <!-- <strong>Phone:</strong> <span>+1 5589 55488 55</span><br> -->
               <strong>Email:</strong> <span>info@example.com</span><br>
             </p>
           </div>
-          <div class="mt-5">
+          <!-- <div class="mt-5">
             <h4>Opening Hours</h4>
             <p>
               <strong>Mon-Sat:</strong> <span>11AM - 23PM</span><br>
               <strong>Sunday</strong>: <span>Closed</span>
             </p>
-          </div>
+          </div> -->
+        </div>
         </div>
 
       </div>
